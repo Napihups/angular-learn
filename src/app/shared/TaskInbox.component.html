@@ -1,0 +1,17 @@
+<div class="panel" [class]="getPanelType()"
+(click)="taskPanelClicked()">
+    <div class="panel-heading panel-hover">
+      <div class="row">
+        <div class="col-xs-6">
+          <i class="fa fa-tasks fa-3x" aria-hidden="true"></i>
+        </div>
+        <div class="col-xs-6 text-right">
+          <h2 style="margin-top: 0px" class="announcement-heading">{{ taskCompleted }}</h2>
+          <p class="announcement-text">Task Completed</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  

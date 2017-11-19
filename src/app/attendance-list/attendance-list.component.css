@@ -1,0 +1,19 @@
+#apiPanel.panel-heading{
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.panel-heading button{
+    margin-top:-21px;
+    font-size: 15px;
+}
+
+.word-wrapper{
+    word-break: break-all;
+
+}
+
+.userList-body{
+    max-height: 300px;
+    overflow: auto;
+}
+
