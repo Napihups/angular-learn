@@ -9,27 +9,25 @@ import { TaskInboxComponent } from './shared/TaskInbox.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { EmployeesDetailComponent } from './employees-detail/employees-detail.component';
 import { EmpdetailGuardServiceService } from './employees-detail/empdetail-guard-service.service';
+import { AttendancesModule } from './attendances.module';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AttendanceListComponent,
-    TaskInboxComponent,
+    // AttendanceListComponent,
+    // TaskInboxComponent,
     WelcomeComponent,
-    EmployeesDetailComponent,
+    // EmployeesDetailComponent,
   ],
   imports: [
+    AttendancesModule,
     BrowserModule,
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot([
 
-      { path: 'attendances', component: AttendanceListComponent},
-
-      { path: 'users/:name',
-      canActivate:[ EmpdetailGuardServiceService ], component: EmployeesDetailComponent},
 
       { path: 'welcome', component: WelcomeComponent},
 
